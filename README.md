@@ -1,5 +1,7 @@
-# Personnal_projects
+Pour lancer le jeu, il suffit de compiler tous les fichiers, puis d'executer main.exe.
 
-# Various projects coded through 2023-2024 academic year
+Voici les commandes à entrer dans le terminal en étant dans le bon repertoire.
 
-# Please navigate within branches to inspect them
+gcc -fdiagnostics-color=always -g main.c player.c supemon.c battle.c move.c items.c shop.c supemon_center.c save.c -o main.exe
+
+.\main.exe
