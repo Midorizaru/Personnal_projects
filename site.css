@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*stucture générale du site + header*/
+
+
+body {
+    background-color:rgb(201, 231, 250);
+}
+
+#logo {
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+#yeeti {
+    font-size: 4em;
+    font-weight: 700;
+    color: rgb(251, 188, 64);
+    text-decoration: none;
+}
+
+#yeeti span {
+        font-family: 'Suez One', serif;
+}
+
+h1, .titre-cara h3, figcaption, .partie-panneau h2 {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    text-align: center;
+    font-family: 'Suez One', serif;
+}
+
+.bandeau, footer {
+    background-color: rgb(149, 212, 232);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.boutons {
+    display: flex;
+}
+  
+.boutons a:hover, .navbar a:hover, footer a:hover, h3 a:hover, #formulaire input:hover {
+    background-color: rgb(251, 188, 64);
+    color: black;
+
+}
+  
+.boutons a, .navbar a, footer a, .stock a {
+    display: flex;
+    text-decoration: none;
+    background-color: rgb(0, 94, 148);
+    color: white;
+    border-radius: 20px;
+    padding: 0.5em;
+    margin: 0.5rem 0;
+    width: fit-content;
+}
+
+.boutons a {
+    color: white;
+}
+  
+.boutons div {
+    padding-right: 1.5vw;
+}
+
+.navbar div {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    justify-content: center;
+    background-color: rgb(149, 212, 232);
+    padding: 1em;
+    margin: 3em 0;
+}
+
+.navbar-ensemble div {
+    padding: 0 1em 0 1em;
+}
+
+.accueil1 {
+    width: 100%;
+}
+
+.img-accueil {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.img-accueil video {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    height: auto;
+    border-radius: 10px;
+    margin: 2em 0 0.5em 0;
+}
+
+.images-une {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.images-une img {
+    padding: 1vh;
+    margin: 1vh;
+}
+
+.accueil-partie-ensemble {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    height: 26em;
+    margin: 6em 2em 2em 2em;
+    background-image: url(ski2.2.accueil.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.accueil-partie-ensemble h2 {
+    margin: 3em;
+    text-shadow: 0 0 30px white;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(149, 212, 232);
+}
+
+
+/*structure page catégories*/
+
+
+.grid-categories {
+    margin: 2% 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.partie-panneau img, .partie-panneau h2 {
+    width: 18rem;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(251, 188, 64);
+    text-align: center;
+}
+
+.partie-panneau {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*structure pages produits général*/
+
+
+.display-general {
+    margin: 1% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10.1em;
+}
+
+.display-precis {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: auto;
+    padding: 2rem;
+    margin: 1.5rem;
+    background-color: rgb(149, 212, 232);
+}
+
+
+/*structure page produit détaillée*/
+
+
+.display-produit, .produits-reco {
+    padding: 1.5rem;
+    background-color: rgb(149, 212, 232);
+    margin: 2% 8%;
+}
+
+.haut-boite, .bas-boite, .produits-reco {
+    display: flex;
+    flex-direction: row;
+}
+
+.haut-boite img {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 27rem;
+    margin: 3em 2em 2em 1.5em;
+}
+
+.bas-boite img {
+    height: 27rem;
+    width: auto;
+    margin-bottom: 2em;
+    padding-right: 1.5rem;
+}
+
+.carac img {
+    width: 50rem;
+    height: auto;
+}
+
+.bas-boite {
+    display: flex;
+    justify-content: right;
+}
+
+.grande-boite-laterale {
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.produits-reco {
+    justify-content: space-evenly;
+}
+
+.display-produit h2, .display-produit h3, .display-produit h4 {
+    padding: 1.5rem 0 1rem 0;
+}
+
+h3 ~ p {
+    line-height: 1.2em;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.stock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+
+/*structure page support*/
+
+
+#formulaire {
+    display: flex;
+    text-align: center;
+    line-height: 1.5em;
+    justify-content: center;
+}
+
+form {
+    padding: 5em 10em;
+    margin: 3em 0;
+    background-color: rgb(149, 212, 232);
+}
+
+#formulaire label {
+    background-color: rgb(0, 94, 148);
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+#formulaire textarea {
+    width: 400px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+#formulaire input {
+    margin: 5px 0;
+    width: 15em;
+    height: 2em;
+    font-size: 1em;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 768px) {
+
+    .grid-categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-accueil video {
+        width: 85%;
+    }
+  
+    .display-general {
+        margin: 1% 0;
+    }
+
+    .display-produit, .produits-reco {
+        margin: 2% 2%;
+        padding: 0;
+    }
+
+    .accueil-partie-ensemble {
+        background-image: none;
+        background-color: rgb(149, 212, 232);
+    }
+
+    .grande-boite-laterale {
+        padding: 1em;
+    }
+
+    .haut-boite img {
+        width: 15em;
+        height: 23em;
+        margin: 1.5em 0 1em 0.75em;
+    }
+
+    .carac img {
+        display: flex;
+        justify-content: left;
+        height: 4em;
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+
+    .bas-boite img {
+        width: 95%;
+        height: 90%;
+        margin: 0;
+        padding: 1em 0.5em 1em 1em;
+    }
+
+    .produits-reco img {
+        width: 25vw;
+        padding: 0 0.75em;
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #logo {
+        width: 80%;
+        height: 80%;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    
+    #yeeti {
+        font-size: 3em;
+        font-weight: 700;
+        color: rgb(251, 188, 64);
+        padding-right: 0.5em;
+    }
+
+    .boutons {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .boutons a {
+        margin: 0;
+    }
+
+    .img-accueil video {
+        width: 95%;
+        margin-top: 1em;
+        border-radius: 3%;  
+    }
+
+    .navbar-ensemble {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar {
+        padding: 0;
+        margin: 0;
+    }
+
+    .haut-boite {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .haut-boite img:nth-child(1) {
+        width: 90%;
+        margin: 1em 1em;
+    }
+
+    .haut-boite img:nth-child(2) {
+        display: none;
+    }
+
+    .bas-boite img {
+        width: 92%;
+    }
+
+}
